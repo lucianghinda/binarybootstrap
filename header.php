@@ -29,6 +29,16 @@
 <body <?php body_class(); ?>>
 	<?php binarybootstrap_nav_menu( 'top_nav', 'navbar navbar-default navbar-fixed-top', __( 'Home', 'binarybootstrap' ) ); ?>
 	<div id="page" class="hfeed site container">
+		<?php 
+		$header_image = get_template_directory();
+		$header_image += "/images/header.png";
+		if (file_exists($header_image)) { ?>
+		<div class="row">
+				<img src="<?php echo get_template_directory_uri();?>/images/header.png" />
+		</div>
+		<?php 
+		} 
+		?>
 		<?php if ( get_theme_mod( 'display_site_title' ) ) : ?>
 		<header id="masthead" class="site-header row" role="banner">
 			<div class="site-branding <?php echo binarybootstrap_full_width_class(); ?>">

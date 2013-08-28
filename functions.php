@@ -31,6 +31,8 @@
 if ( !isset( $content_width ) )
 	$content_width = 940;
 
+require_once get_template_directory() . '/custom-functions.php';
+
 /**
  * Custom template tags for this theme.
  */
