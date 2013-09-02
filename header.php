@@ -31,7 +31,7 @@
 	<div id="page" class="hfeed site container">
 		<?php 
 		$header_image = get_template_directory();
-		$header_image += "/images/header.png";
+		$header_image .= "/images/header.png";
 		if (file_exists($header_image)) { ?>
 		<div class="row">
 				<img src="<?php echo get_template_directory_uri();?>/images/header.png" />
